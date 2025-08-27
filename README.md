@@ -4,6 +4,14 @@ This repository is my **practice hub** for building 50+ small JavaScript project
 
 The goal is to **learn, experiment, and improve** by creating projects that are interactive and practical.  
 
+
+## Projects List
+
+| #   | PROJECTS NAME                      | LIVE DEMO |
+| --- | ---------------------------------- | --------- |
+| 01  | Guess Computer Number              | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/01%20Guess%20Computer%20Number/) |
+
+
 💡 **How You Can Contribute:**  
 - Improve existing projects by **adding new features**  
 - **Fix bugs** or make the code cleaner  
@@ -13,14 +21,6 @@ The goal is to **learn, experiment, and improve** by creating projects that are 
 Everyone is welcome to contribute, learn, and boost their coding skills! 🚀
 
 ---
-
-## Projects List
-
-| #   | PROJECTS NAME                      | LIVE DEMO |
-| --- | ---------------------------------- | --------- |
-| 01  | Guess Computer Number              | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/01%20Guess%20Computer%20Number/) |
-
-
 
 
 ---

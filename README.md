@@ -10,6 +10,7 @@ The goal is to **learn, experiment, and improve** by creating projects that are 
 | --- | --------------------- | ---------------------------------------------------------------------------------------------------- |
 | 01  | Guess Computer Number | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/01%20Guess%20Computer%20Number/) |
 | 02  | Age Calculator        | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/02%20Age%20Calculator/)          |
+| 03  | Quiz App              | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/03%20Quiz%20App/)                |
 
 💡 **How You Can Contribute:**
 

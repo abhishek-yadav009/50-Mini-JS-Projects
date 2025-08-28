@@ -3,25 +3,22 @@ const answerButtons = document.querySelectorAll(".btn")
 const nextButton = document.querySelector("#next-btn")
 const timer = document.querySelector("#timer")
 
-
-// 1init index 
-
+// 1- Initialize index and score
 let currQuestionIndex = 0
 let score = 0
 let timerInterval
 
-
-// 2show question and answer 
-
+// 2- Show the current question and answers
 function showQuestion(index) {
-    clearInterval(timerInterval)
+    clearInterval(timerInterval) // Stop any previous timer
     timer.innerText = 10
     timer.style.display = "block"
 
-
+    // Display the question
     const currQuestion = questions[index]
     displayQuestion.innerText = currQuestion.question
 
+    // Display all answer options
     answerButtons.forEach((btn, i) => {
         btn.innerText = currQuestion.answers[i].text
         btn.dataset.correct = currQuestion.answers[i].correct
@@ -29,68 +26,61 @@ function showQuestion(index) {
         btn.style.backgroundColor = ""
         btn.style.color = ""
         btn.disabled = false
-
     })
 
+    // Start the timer for this question
     timerUpdate()
-
 }
 
 showQuestion(currQuestionIndex)
 
-// 3change the color after clicking and also show the correct answer
+// 3- Handle answer click: change color and show correct answer
 answerButtons.forEach(btn => {
     btn.addEventListener("click", () => {
-        // it means clear the timer once we clicked to next button
-        clearInterval(timerInterval)
+        clearInterval(timerInterval) // Stop the timer when an answer is clicked
         timer.style.display = "none"
+
+        // Change the color of the clicked button based on correctness
         if (btn.dataset.correct === "true") {
             btn.style.backgroundColor = "green"
             score++
         } else {
             btn.style.backgroundColor = "red"
-
         }
 
+        // Show the correct answer for all buttons and disable them
         answerButtons.forEach(btn => {
             if (btn.dataset.correct === "true") {
                 btn.style.backgroundColor = "green"
-
             }
             btn.disabled = true
         })
 
-        nextButton.style.display = "block"
-
-
-
+        nextButton.style.display = "block" // Show the next button
     })
-
-
-
 })
-// 4appear the next button and increase the index after clicking and initlize the color too
+
+// 4- Handle next button click: move to next question or show score
 nextButton.addEventListener("click", () => {
-    // Restart if finished
-    if (currQuestionIndex >= questions.length) {
+    if (currQuestionIndex >= questions.length) { // End of quiz
         restartQuiz()
     } else {
         currQuestionIndex++
-        if (currQuestionIndex < questions.length) {
+        if (currQuestionIndex < questions.length) { // More questions remaining
             showQuestion(currQuestionIndex)
-        } else {
+        } else { // Last question finished
             showScore()
         }
     }
 })
 
-
-// 5show the score
-
+// 5- Show the final score
 function showScore() {
     clearInterval(timerInterval)
     timer.style.display = "none"
     displayQuestion.innerText = `Your score is ${score} / ${questions.length}`
+
+    // Hide all answer buttons
     answerButtons.forEach(btn => {
         btn.style.display = "none"
     })
@@ -98,14 +88,14 @@ function showScore() {
     nextButton.innerText = "Restart"
 }
 
-// 6 restart the game
-
+// 6- Restart the quiz
 function restartQuiz() {
     currQuestionIndex = 0
     score = 0
     nextButton.innerText = "Next"
     timer.style.display = "block"
 
+    // Reset buttons for the new game
     answerButtons.forEach(btn => {
         btn.style.backgroundColor = ""
         btn.disabled = false
@@ -114,11 +104,9 @@ function restartQuiz() {
     })
 
     showQuestion(currQuestionIndex)
-
 }
 
-
-
+// 7- Timer function for each question
 function timerUpdate() {
     let timeLeft = 10
     timerInterval = setInterval(() => {
@@ -130,6 +118,7 @@ function timerUpdate() {
             timer.innerText = "TimeUp"
             nextButton.style.display = "block"
 
+            // Show correct answer and disable buttons
             answerButtons.forEach(btn => {
                 if (btn.dataset.correct === "true") {
                     btn.style.backgroundColor = "green"
@@ -141,37 +130,5 @@ function timerUpdate() {
                 btn.disabled = true
             })
         }
-
-
     }, 1000)
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

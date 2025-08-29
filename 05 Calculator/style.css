@@ -1,0 +1,111 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Calculator container */
+.calculator {
+  width: 340px;
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Input display */
+#main-input {
+  width: 100%;
+  height: 70px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px 15px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+/* Rows of buttons */
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Buttons */
+button {
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background: #444;
+  color: #fff;
+}
+
+/* Hover effect */
+button:hover {
+  background: #666;
+  transform: scale(1.05);
+}
+
+/* Press (click) effect */
+button:active {
+  transform: scale(0.95);
+  background: #555;
+}
+
+/* Operator buttons */
+button.operator {
+  background: #ff9500;
+}
+
+button.operator:hover {
+  background: #e68a00;
+}
+
+/* Equals button */
+button.equal {
+  background: #4caf50;
+  grid-column: span 2; /* makes "=" double wide */
+}
+
+button.equal:hover {
+  background: #388e3c;
+}
+
+/* AC button */
+button.ac {
+  background: #f44336;
+}
+
+button.ac:hover {
+  background: #d32f2f;
+}
+
+/* DEL button */
+button.del {
+  background: #9c27b0;
+}
+
+button.del:hover {
+  background: #7b1fa2;
+}

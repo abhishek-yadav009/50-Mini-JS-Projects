@@ -13,6 +13,7 @@ function showQuestion(index) {
     clearInterval(timerInterval) // Stop any previous timer
     timer.innerText = 10
     timer.style.display = "block"
+    nextButton.style.display = "none"
 
     // Display the question
     const currQuestion = questions[index]
@@ -132,3 +133,9 @@ function timerUpdate() {
         }
     }, 1000)
 }
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        nextButton.click()
+    }
+})

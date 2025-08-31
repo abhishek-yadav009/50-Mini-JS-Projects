@@ -14,6 +14,8 @@ The goal is to **learn, experiment, and improve** by creating projects that are 
 | 04  | Expense Tracker       | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/04%20Expense%20Tracker/)           |
 | 05  | Calculator            | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/05%20Calculator/)                  |
 | 06  | Todo List             | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/06%20Todo%20List/)                 |
+| 07  | Digital Clock         | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/07%20Digital%20Clock/)             |
+| 08  | Dark Mode Button      | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/08%20Dark%20Mode%20Button/)        |
 
 
 

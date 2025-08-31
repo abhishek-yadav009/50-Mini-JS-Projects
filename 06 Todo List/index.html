@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="container">
+            <div id="wrapper">
+                <input type="text" id="task-input" placeholder="Enter your task here....">
+                <button id="add-btn">Add</button>
+            </div>
+            <p id="pending-tasks">You have <span id="count-value">0</span> task to complete</p>
+            <div class="tasks">
+                <!-- Example task -->
+                <!-- <div class="task">
+                    <input type="checkbox" class="task-check">
+                    <span>Buy groceries</span>
+                    <button class="delete-btn">Delete</button>
+                </div> -->
+            </div>
+        </div>
+        <p class="error">Input cannot be empty!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

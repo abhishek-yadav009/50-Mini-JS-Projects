@@ -6,11 +6,16 @@ The goal is to **learn, experiment, and improve** by creating projects that are 
 
 ## Projects List
 
-| #   | PROJECTS NAME         | LIVE DEMO                                                                                            |
-| --- | --------------------- | ---------------------------------------------------------------------------------------------------- |
-| 01  | Guess Computer Number | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/01%20Guess%20Computer%20Number/) |
-| 02  | Age Calculator        | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/02%20Age%20Calculator/)          |
-| 03  | Quiz App              | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/03%20Quiz%20App/)                |
+| #   | PROJECTS NAME         | LIVE DEMO                                                                                              |
+| --- | --------------------- | ------------------------------------------------------------------------------------------------------ |
+| 01  | Guess Computer Number | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/01%20Guess%20Computer%20Number/)   |
+| 02  | Age Calculator        | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/02%20Age%20Calculator/)            |
+| 03  | Quiz App              | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/03%20Quiz%20App/)                  |
+| 04  | Expense Tracker       | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/04%20Expense%20Tracker/)           |
+| 05  | Calculator            | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/05%20Calculator/)                  |
+| 06  | Todo List             | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/06%20Todo%20List/)                 |
+
+
 
 💡 **How You Can Contribute:**
 

@@ -20,8 +20,7 @@ The goal is to **learn, experiment, and improve** by creating projects that are 
 | 10  | Weather App              | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/10%20Weather%20App/)               |
 | 11  | Rock Paper Scissors Game | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/11%20Rock%20Paper%20Scissors%20Game/) |
 | 12  | Registration Form Validation  | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/12%20Registration%20Form%20Validation/) |
-
-
+| 13  | Product Search Engine         | [Live Demo](https://abhishek-yadav009.github.io/50-Mini-JS-Projects/13%20Product%20Search%20Engine/) |
 
 
 💡 **How You Can Contribute:**
